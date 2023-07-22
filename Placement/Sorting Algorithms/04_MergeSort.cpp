@@ -3,8 +3,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 /* Function to print an array */
 void printArray(int arr[], int size)
 {
