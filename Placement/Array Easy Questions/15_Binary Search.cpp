@@ -10,13 +10,34 @@ using namespace std;
 
 class Solution {
   public:
+    // Recursive Binary Search
+    int Rec_binarysearch(int low,int high,int arr[],int k){
+        // Base Case
+        if(low>high)
+        return -1;
+        
+        // Calculate Mid
+        int mid=(low+high)/2;
+        // If Equal
+        if(arr[mid]==k)
+        return mid;
+        // IF Greater
+        if(arr[mid]>k)
+        return Rec_binarysearch(low,mid-1,arr,k);
+        else
+        return Rec_binarysearch(mid+1,high,arr,k);
+        
+    }
     int binarysearch(int arr[], int n, int k) {
-        // code here
-        // Low is Starting Index of Search Space
+        // Recursive Solution
+        return Rec_binarysearch(0,n-1,arr,k);
+        
+        // Iterative Solution
+        // Low is Starting Index of the Search Space
         int low=0;
-        // High is Ending Index of Search Space
+        // High is the Ending Index of the Search Space
         int high=n-1;
-        // Calculate Middle Index of Search Space
+        // Calculate the Middle Index of the Search Space
         int mid=(low+high)/2;
         
         while(low<=high)
@@ -32,10 +53,10 @@ class Solution {
             else
             low=mid+1;
             
-            // Don't Forgot to Calculate New Middle Index of New Search Space
+            // Don't Forgot to Calculate the New Middle Index of the New Search Space
             mid=(low+high)/2;
         }
-        // If the Element doesnot found Return -1
+        // If the Element doesn't found Return -1
         return -1;
     }
 };
