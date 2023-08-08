@@ -1,3 +1,7 @@
+## MarkDown Tutorials: [Link1](https://www.markdowntutorial.com)
+## MarkDown Tutorials: [Link2](https://www.markdownguide.org/basic-syntax/)
+
+
 # TOPIC -> Italics and Bold
 To make a phrase italic in Markdown, you can surround words with an underscore (_ ). For example, _this_ word would become italic.
 e.g : Hi My _Name_ is _Rohan_
@@ -128,3 +132,10 @@ For example, in the following list, we're going to add some sub-lists to each "m
    * Has a fantastic beard
    * Loves whiskey
    * Possibly also scotch?
+# TOPIC -> Line Breaks
+To create a line break or new line ( <br> ), end a line with two or more spaces, and then type return. This is the first line. And this is the second line.
+
+using two spaces: Line   Break  
+
+using br tag: Line<br>Break
+
